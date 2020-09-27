@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Char-Count | 2020</title>
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="heading">Character_Counter</h1>
+			<p id="credits" > Developed by <a href="https://ahmar46.github.io/Ahmar_Portfolio" target="_blank">(mrelectrifying)</a> </p>
+			<p id="head_para">
+				COUNT CHARACTERS, WORDS, PARAGRAPHS AND SENTENCES IN REALTIME
+			</p>
+		</header>
+
+		<section>
+			<div class="main-section">
+				<textarea
+					placeholder="Enter Your Text here..."
+					id="words"
+					cols="50"
+					rows="10"
+				></textarea>
+				<br />
+				<p id="showdata"></p>
+				<p id="showwordscount"></p>
+				<p id="showsentencecount"></p>
+				<br />
+				<button onclick="countwords()">Count Chars</button>
+			</div>
+
+			<div class="about">
+				<h3 class="about_ques">What is a Character Counter?</h3>
+
+				<p class="about_ans">
+					As the name suggests, the character counter is a tool to count the
+					number of characters, words, sentences, and paragraphs in your text on
+					any type of online or social media platform. It is an easy to use tool
+					via simply typing the text or by copying and pasting the text in the
+					text area after which the counter will generate the result on clicking
+					“Count” and the number of characters, words, sentences, and paragraphs
+					will be displayed instantly.
+				</p>
+			</div>
+			<br />
+			<div class="about">
+				<h3 class="about_ques">Characters allowed in Social Media?</h3>
+
+				<p class="about_ans">
+					Nowadays, you use different social media platforms to express yourself
+					through your script in the language of your choice, and here word
+					counter plays an important role as there are certain limits to the
+					quantity of your text in these platforms. And to be very precise and
+					clear in your textual expressions is the need of the hour so that you
+					can tell your stuff by using a very optimal number of characters and
+					words. So here is the information regarding the number of characters
+					to be used in major social media platforms.
+				</p>
+				<br />
+				<hr />
+				<br />
+				<h3 class="about_title">Youtube</h3>
+				<p class="about_ans">
+					Youtube is one of the frequently used platforms for video streaming
+					but somehow it also has different kinds of textual fields like title,
+					description, and playlist text. And even it is used as a search engine
+					and thus, your different youtube text should be fascinating enough to
+					compel people to click on it. And thus if you will write your text
+					within youtube’s character limit, it will be more discoverable.
+				</p>
+				<br />
+				<table class="about_table">
+					<tr>
+						<th>#</th>
+						<th>TextField</th>
+						<th>Maximum Character Limit</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Title(Video)</td>
+						<td>70</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Title(Playlist)</td>
+						<td>60</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Description</td>
+						<td>5000</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Tags</td>
+						<td>500(30 characters per tag)</td>
+					</tr>
+				</table>
+				<br />
+				<hr />
+				<br />
+				<h3 class="about_title">Facebook</h3>
+				<p class="about_ans">
+					Facebook is one of the highly used social media platforms in the form
+					of images and videos aided by textual descriptions or expressing your
+					thoughts in a direct written way. And you also have a larger number of
+					audiences there and to make your text reachable, you should write
+					within the ideal text limits that are crisp and precise. Longer texts
+					might deviate the attention of your audience. Here are the character
+					limits for different facebook modules:
+				</p>
+				<br />
+				<table class="about_table">
+					<tr>
+						<th>#</th>
+						<th>TextField</th>
+						<th>Maximum Character Limit</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Facebook Post</td>
+						<td>63,206</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Username</td>
+						<td>50</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Page description</td>
+						<td>155</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Comments</td>
+						<td>8000</td>
+					</tr>
+				</table>
+				<br />
+				<h3 class="about_title">Facebook link Ads and video Ads</h3>
+				<p class="about_ans">
+					<p class="about_ans">
+						Using Facebook video ads not only helps you connect with your audience on the channel they prefer, but you make that connection using the type of media they already like to consume. A targeted video ad is the best opportunity you have to get your content to people at the right place at the right time. 
+					</p>
+				</p>
+				<br />
+				<table class="about_table">
+					<tr>
+						<th>#</th>
+						<th>TextField</th>
+						<th>Maximum Character Limit</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Text</td>
+						<td>90</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Headline</td>
+						<td>25</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Description</td>
+						<td>30</td>
+					</tr>
+				</table>
+				<br />
+				<h3 class="about_title">Facebook Image Ads</h3>
+				<p class="about_ans">
+					<p class="about_ans">
+						Using Facebook Image ads not only helps you connect with your audience on the page they prefer, but you make that connection using the type of media they already like to consume. A targeted image ad is the best opportunity you have to get your content to people at the right place at the right time. 
+					</p>
+				</p>
+				<br />
+				<table class="about_table">
+					<tr>
+						<th>#</th>
+						<th>TextField</th>
+						<th>Maximum Character Limit</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Text</td>
+						<td>90</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Headline</td>
+						<td>40</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Description</td>
+						<td>20</td>
+					</tr>
+				</table>
+				<br />
+				<hr />
+				<br />
+				<h3 class="about_title">Instagram</h3>
+				<p class="about_ans">
+					Instagram is nowadays a top-rated social media platform that you use for both personal posts and professional branding. Here text again plays a very important role in different forms like username, caption, and hashtags and thus it also has some ideal character limits. Within these limits, your post is going to influence your audience but if your posts are longer, they seem hectic.
+				</p>
+				<br />
+				<table class="about_table">
+					<tr>
+						<th>#</th>
+						<th>TextField</th>
+						<th>Maximum Character Limit</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Caption</td>
+						<td>2200</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Hashtags</td>
+						<td>30 Hashtags</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Bio character</td>
+						<td>150</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Username</td>
+						<td>30</td>
+					</tr>
+				</table>
+				<br />
+				<hr />
+				<br />
+				<h3 class="about_title">Twitter</h3>
+				<p class="about_ans">
+					Twitter is also a highly interactive social media platform nowadays especially covering vast information like political, economic, geographical, and other day to day events across the world. This busy platform lets your audience have very little time to view and analyze your post and thus you need to be very precise and confined in your text to grab the attention of your audience. Although 71 to 100 characters is said to be the ideal character length of a tweet, there is some maximum limit to this also.
+				</p>
+				<br />
+				<table class="about_table">
+					<tr>
+						<th>#</th>
+						<th>TextField</th>
+						<th>Maximum Character Limit</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Tweet length</td>
+						<td>280</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>DMs</td>
+						<td>10,000</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Twitter handle</td>
+						<td>15</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Profile name</td>
+						<td>20</td>
+					</tr>
+				</table>
+				<br />
+				<hr />
+				<br />
+				<h3 class="about_title">Snapchat</h3>
+				<p class="about_ans">
+					Snapchat is a highly interactive social media platform and is popular among teenagers. It facilitates temporary image and video interaction with your audience, and that is why it may help a lot to grow your business too, projecting your plan into this platform. But again it will help you when you have your captions and text within some ideal limits so that it may get easy movement across the platform.
+					Snapchat limits your caption length to 32 characters and that seems very tough to express yourself. But it is worth believing that if you get habitual to practicing making your captions this much precise, you will surely get more viewers interacting with your post and timeline.
+				</p>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<p>Copyright &copy; 2020 | Character_Counter</p>
+		</footer>
+
+		<script src="main.js"></script>
+	</body>
+</html>

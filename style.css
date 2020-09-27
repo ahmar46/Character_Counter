@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	font-family: 'Roboto', 'sans-serif';
+}
+
+textarea {
+	border: 2px solid #0984e3;
+	border-radius: 10px;
+	outline: none;
+	font-size: 1.2rem;
+	padding: 10px 2px;
+	box-shadow: 0 0 4px 1px #b2bec3;
+	font-family: monospace;
+}
+button {
+	padding: 20px 30px;
+	background-color: #1f75ca;
+	border-radius: 10px;
+	color: #fff;
+	border: 2px solid #0984e3;
+	font-size: 1.2rem;
+}
+section p {
+	color: #0984e3;
+	font-size: 1.2rem;
+}
+
+/* Header */
+
+.header {
+	/* margin-top: 10px; */
+	text-align: center;
+	color: #fff;
+	background-color: rgb(13, 108, 163);
+}
+
+.heading {
+	font-family: monospace;
+	font-size: 3.8rem;
+}
+
+#head_para {
+	color: #fff;
+	font-family: monospace;
+}
+
+#credits {
+	text-align: right;
+	font-family: monospace;
+	margin-right: 20px;
+}
+
+a {
+	font-family: monospace;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Section */
+
+.main-section {
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.about {
+	margin: 10px 60px 10px 60px;
+	border: 2px solid #333;
+}
+
+.about_ques {
+	text-align: center;
+	border-bottom: 2px solid #333;
+	font-size: 2.5rem;
+	margin-bottom: 15px;
+	font-family: monospace;
+	background-color: rgb(245, 231, 231);
+	color: #333;
+}
+
+.about_ans {
+	text-align: left;
+	margin-left: 10px;
+	font-family: monospace;
+	font-size: 1.5rem;
+}
+
+.about_title {
+	font-family: monospace;
+	font-size: 1.9rem;
+	color: #333;
+	margin-left: 10px;
+}
+
+.about_table {
+	/* display: flex;
+	/* justify-content: center; */
+	/* align-content: center;  */
+	/* margin: 0px 200px 0px 200px;
+    padding: 0px 0px 0px 150px; */
+	background-color: rgb(245, 231, 231);
+	margin: auto;
+	margin-bottom: 20px;
+	font-family: monospace;
+	border: 2px solid #333;
+}
+
+table {
+	width: 50%;
+}
+
+tr {
+	width: 20%;
+}
+
+th,
+td {
+	text-align: left;
+}
+
+/* Footer */
+
+.footer {
+	font-family: monospace;
+	font-size: 1.2rem;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: black;
+	text-align: center;
+	color: #fff;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+	.header {
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.heading {
+		font-size: 2.5rem;
+	}
+	#credits {
+		font-size: 0.6rem;
+		margin-right: 0px;
+	}
+	#head_para {
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.heading {
+		font-size: 2.1rem;
+	}
+
+	.header {
+	}
+
+	#head_para {
+		font-size: 0.7rem;
+	}
+	#words {
+	}
+}
