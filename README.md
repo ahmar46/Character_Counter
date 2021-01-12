@@ -2,4 +2,4 @@
 
 ### Technologies Used : HTML, CSS & Javascript
 
-### Find me on
+### Find me on Insta
