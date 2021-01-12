@@ -138,8 +138,8 @@ td {
 /* Media Queries */
 
 @media screen and (max-width: 1200px) {
-	.header {
-	}
+	/* .header {
+	} */
 }
 
 @media screen and (max-width: 800px) {
